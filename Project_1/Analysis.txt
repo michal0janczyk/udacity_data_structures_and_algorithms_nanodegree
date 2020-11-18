@@ -1,0 +1,37 @@
+# Task 0
+Taking the first element from the set gives us the O(1) time complexity,
+the program execution time is constant and independent of the input size.
+In the case of getting the last element, we observe the same case.
+
+# Task 1
+The process of adding an element to the set is done using the set.add()
+function, which creates the appropriate record value for storage in the hash table.
+In our case, it will have a line complexity 2 * O(n) because we have to go over
+each element of the two arrays and check if the element has already been added.
+
+# Task 2
+First of all in python, dictionaries are internally implemented using the hash tables.
+In our case, we are going to iterates through list of all elements (calls),
+which gives us line complexity of O(n).
+Process of checking if the element is present in the dictionary or not can be
+obtained using the update() formula which can be compared to the function like
+get() and set() methods.
+If the key is already present in the dictionary, update() only updates the
+element with the new value, but if the key is not present at all,
+ew elements are created.
+In most of the cases, the access and insertion in a hashtable is a constant
+time operation - 2 * O(1). On the other hand, the code also contains a list
+comprehension whose time complexity is O(n), since it iterates over every
+element of the array. Which gives us O(n) + O(n) in total, i.e.
+ after shortening O(n).
+
+# Task 3
+The code contains two elements that most affect the computational complexity
+of the algorithm. The sort() function, the average case of which is O(nlogn).
+The second element is the list comprehension, the computational complexity of
+which is O(n), which when shortened gives us O(nlogn).
+
+#Task 4
+As in the previous example, the computational complexity of the code is
+O(nlogn) due to the use of the built-in sort function. Iterating over the
+list gives a computational complexity of O(n).
